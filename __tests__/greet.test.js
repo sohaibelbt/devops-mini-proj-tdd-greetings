@@ -8,5 +8,7 @@ test('checkgreet', () => {
   expect(greet(undefined)).toBe('Hello, my friend.');
 
   expect(greet(null)).toBe('Hello, my friend.');
+
+  expect(greet('BOB')).toBe('HELLO, BOB!');
 });
 
