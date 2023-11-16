@@ -10,5 +10,7 @@ test('checkgreet', () => {
   expect(greet(null)).toBe('Hello, my friend.');
 
   expect(greet('BOB')).toBe('HELLO, BOB!');
+
+  expect(greet(['Souli', 'Sohaib'])).toBe('Hello, Souli and Sohaib.');
 });
 
