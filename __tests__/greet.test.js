@@ -24,5 +24,5 @@ test('checkgreet', () => {
   expect(greet(['Sohaib', 'Ibrahim', 'Mohamed'])).toBe('Hello, Sohaib, Ibrahim and Mohamed');
 
   // eslint-disable-next-line no-undef, max-len
-  expect(greet(['MOHAMED', 'Sohaib', 'Ibrahim'])).toBe('Hello, Sohaib and Ibrahim. AND HELLO MOHAMED !');
+  expect(greet(['Sohaib', 'MOHAMED', 'Ibrahim'])).toBe('Hello, Sohaib and Ibrahim. AND HELLO MOHAMED !');
 });
