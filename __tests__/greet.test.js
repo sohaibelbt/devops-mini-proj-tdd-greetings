@@ -1,16 +1,28 @@
 const greet = require('../utils/greet');
 
+// eslint-disable-next-line no-undef
 test('checkgreet', () => {
+  // eslint-disable-next-line no-undef
   expect(greet('Bob')).toBe('Hello, Bob.');
 
+  // eslint-disable-next-line no-undef
   expect(greet('')).toBe('Hello, my friend.');
 
+  // eslint-disable-next-line no-undef
   expect(greet(undefined)).toBe('Hello, my friend.');
 
+  // eslint-disable-next-line no-undef
   expect(greet(null)).toBe('Hello, my friend.');
 
+  // eslint-disable-next-line no-undef
   expect(greet('BOB')).toBe('HELLO, BOB!');
 
-  expect(greet(['Souli', 'Sohaib'])).toBe('Hello, Souli and Sohaib.');
-});
+  // eslint-disable-next-line no-undef
+  expect(greet(['Ibrahim', 'Sohaib'])).toBe('Hello, Ibrahim and Sohaib.');
 
+  // eslint-disable-next-line no-undef
+  expect(greet(['Sohaib', 'Ibrahim', 'Mohamed'])).toBe('Hello, Sohaib, Ibrahim and Mohamed');
+
+  // eslint-disable-next-line no-undef, max-len
+  expect(greet(['MOHAMED', 'Sohaib', 'Ibrahim'])).toBe('Hello, Sohaib and Ibrahim. AND HELLO MOHAMED !');
+});
