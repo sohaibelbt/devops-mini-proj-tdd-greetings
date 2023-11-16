@@ -35,6 +35,20 @@ function greet(name) {
             }
             return string;
           }
+          if (name[name.length - 1] === 'an') {
+            let string = 'Hello ';
+            const index = name.length - 1;
+            // eslint-disable-next-line no-plusplus
+            for (let i = 0; i < index; i++) {
+              if (i === index - 2) {
+                string += `${name[i]} and `;
+              } else if (i === index - 1) {
+                string += `${name[i]}.`;
+              // eslint-disable-next-line no-unused-vars
+              } else string += `${name[i]},`;
+            }
+            return string;
+          }
         }
         const wordOnUpperCase = [];
         // eslint-disable-next-line no-plusplus

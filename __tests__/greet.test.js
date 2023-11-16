@@ -33,5 +33,5 @@ test('checkgreet', () => {
   expect(greet(['Sohaib', 'Ibrahim', 'nl'])).toBe('Hallo Sohaib en Ibrahim.');
 
   // eslint-disable-next-line no-undef
-  //expect(greet(['Sohaib', 'Ibrahim', 'an'])).toBe('Hello Sohaib and Ibrahim.');
+  expect(greet(['Sohaib', 'Ibrahim', 'an'])).toBe('Hello Sohaib and Ibrahim.');
 });
