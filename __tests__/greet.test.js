@@ -25,4 +25,13 @@ test('checkgreet', () => {
 
   // eslint-disable-next-line no-undef, max-len
   expect(greet(['Sohaib', 'MOHAMED', 'Ibrahim'])).toBe('Hello, Sohaib and Ibrahim. AND HELLO MOHAMED !');
+
+  // eslint-disable-next-line no-undef
+  expect(greet(['Sohaib', 'Ibrahim', 'fr'])).toBe('Bonjour Sohaib et Ibrahim.');
+  
+  // eslint-disable-next-line no-undef
+  //expect(greet(['Sohaib', 'Ibrahim', 'nl'])).toBe('Hallo Sohaib en Ibrahim.');
+
+  // eslint-disable-next-line no-undef
+  //expect(greet(['Sohaib', 'Ibrahim', 'an'])).toBe('Hello Sohaib and Ibrahim.');
 });
