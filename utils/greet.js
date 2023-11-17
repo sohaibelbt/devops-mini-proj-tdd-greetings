@@ -3,12 +3,12 @@ function greet(name) {
     if (name.length === 2) return `Hello, ${name[0]} and ${name[1]}.`;
     if (name.length > 2) {
       if (
-        name[name.length - 1] === "fr" ||
-        name[name.length - 1] === "an" ||
-        name[name.length - 1] === "nl"
+        name[name.length - 1] === 'fr'
+        || name[name.length - 1] === 'an'
+        || name[name.length - 1] === 'nl'
       ) {
-        if (name[name.length - 1] === "fr") {
-          let string = "Bonjour ";
+        if (name[name.length - 1] === 'fr') {
+          let string = 'Bonjour ';
           const index = name.length - 1;
           // eslint-disable-next-line no-plusplus
           for (let i = 0; i < index; i++) {
@@ -21,8 +21,8 @@ function greet(name) {
           }
           return string;
         }
-        if (name[name.length - 1] === "nl") {
-          let string = "Hallo ";
+        if (name[name.length - 1] === 'nl') {
+          let string = 'Hallo ';
           const index = name.length - 1;
           // eslint-disable-next-line no-plusplus
           for (let i = 0; i < index; i++) {
@@ -35,8 +35,8 @@ function greet(name) {
           }
           return string;
         }
-        if (name[name.length - 1] === "an") {
-          let string = "Hello ";
+        if (name[name.length - 1] === 'an') {
+          let string = 'Hello ';
           const index = name.length - 1;
           // eslint-disable-next-line no-plusplus
           for (let i = 0; i < index; i++) {
@@ -58,7 +58,7 @@ function greet(name) {
           name.splice(i, 1);
         }
       }
-      let array = "Hello, ";
+      let array = 'Hello, ';
       // eslint-disable-next-line no-plusplus
       for (let i = 0; i < name.length; i++) {
         if (i === name.length - 2) {
@@ -70,11 +70,11 @@ function greet(name) {
       if (wordOnUpperCase.length === 0) {
         return array;
       }
-      return `${array}. AND HELLO ${wordOnUpperCase.join(" ")} !`;
+      return `${array}. AND HELLO ${wordOnUpperCase.join(' ')} !`;
     }
   }
   if (name === undefined || name === null || name.length === 0) {
-    return "Hello, my friend.";
+    return 'Hello, my friend.';
   }
   if (name === name.toUpperCase()) return `HELLO, ${name}!`;
   return `Hello, ${name}.`;

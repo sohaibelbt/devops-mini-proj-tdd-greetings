@@ -28,7 +28,7 @@ test('checkgreet', () => {
 
   // eslint-disable-next-line no-undef
   expect(greet(['Sohaib', 'Ibrahim', 'fr'])).toBe('Bonjour Sohaib et Ibrahim.');
-  
+
   // eslint-disable-next-line no-undef
   expect(greet(['Sohaib', 'Ibrahim', 'nl'])).toBe('Hallo Sohaib en Ibrahim.');
 
