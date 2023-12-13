@@ -10,11 +10,13 @@
         "prettier:fix": "prettier --write .",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "code:fix": "prettier --write . && eslint --fix ."
+        "code:fix": "prettier --write . && eslint --fix .",
+        "commit": "cz"
     },
     "author": "sohaib, mohamed, ibrahim",
     "license": "ISC",
     "devDependencies": {
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.55.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-standard": "^17.1.0",
@@ -23,5 +25,10 @@
         "eslint-plugin-promise": "^6.1.1",
         "jest": "^29.7.0",
         "prettier": "3.1.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
     }
 }
