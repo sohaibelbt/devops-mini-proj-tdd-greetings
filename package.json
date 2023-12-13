@@ -1,21 +1,20 @@
 {
-  "name": "devops-mini-proj-tdd-greetings",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
-  },
-  "author": "sohaib, mohamed, ibrahim",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0",
-    "jest": "^29.7.0",
-    "prettier": "3.1.0"
-  }
+    "name": "devops-mini-proj-tdd-greetings",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "prettier": "prettier --check .",
+        "prettier:fix": "prettier --write ."
+    },
+    "author": "sohaib, mohamed, ibrahim",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.29.0",
+        "jest": "^29.7.0",
+        "prettier": "3.1.1"
+    }
 }
