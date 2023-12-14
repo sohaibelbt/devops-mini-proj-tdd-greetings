@@ -1,4 +1,4 @@
-name: GitHub Actions 
+name: 'GitHub Actions : Continuous Integration'
 
 on:
   pull_request:
