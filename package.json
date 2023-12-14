@@ -1,11 +1,12 @@
 {
     "name": "devops-mini-proj-tdd-greetings",
-    "type": "module",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "type": "module",
     "scripts": {
-        "test": "jest",
+        "test": "jest --coverage",
+        "test:watch": "jest --watchAll",
         "prettier": "prettier --check .",
         "prettier:fix": "prettier --write .",
         "lint": "eslint .",
