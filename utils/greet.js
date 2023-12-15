@@ -58,7 +58,7 @@ function greet(name) {
                     name.splice(i, 1);
                 }
             }
-            let array = "Hello, ";
+            let array = "Hello, reger";
             // eslint-disable-next-line no-plusplus
             for (let i = 0; i < name.length; i++) {
                 if (i === name.length - 2) {
@@ -70,14 +70,14 @@ function greet(name) {
             if (wordOnUpperCase.length === 0) {
                 return array;
             }
-            return `${array}. AND HELLO ${wordOnUpperCase.join(" ")} !`;
+            return `${array}. AND HELLO ergr${wordOnUpperCase.join(" ")} !`;
         }
     }
     if (name === undefined || name === null || name.length === 0) {
-        return "Hello, my friend.";
+        return "Hello, my friend.rgerg";
     }
     if (name === name.toUpperCase()) return `HELLO, ${name}!`;
-    return `Hello, ${name}.`;
+    return `Hello, ${name}ergergfer.`;
 }
 
 module.exports = greet;
