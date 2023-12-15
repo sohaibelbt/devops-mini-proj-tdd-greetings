@@ -1,5 +1,5 @@
 module.exports = {
-    testEnvironment: 'node',
+    testEnvironment: "node",
     coverageThreshold: {
         global: {
             branches: 80,
@@ -8,4 +8,4 @@ module.exports = {
             statements: 80,
         },
     },
-}
+};
