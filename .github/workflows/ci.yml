@@ -36,6 +36,7 @@ jobs:
             - name: Run tests and check coverage
               run: |
                   npm run test -- --coverage
+                  ls -la coverage/lcov-report/
                   COVERAGE=$(cat coverage/lcov-report/greet.js.html | grep -oP 'Statements<\/td><td class="text-right"><strong>\K\d+')
                   echo "COVERAGE: $COVERAGE"
                   if [ $COVERAGE -ge 80 ]; then
