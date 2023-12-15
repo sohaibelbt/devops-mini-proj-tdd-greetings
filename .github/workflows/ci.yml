@@ -37,7 +37,7 @@ jobs:
               run: |
                   npm run test -- --coverage
                   COVERAGE=$(cat coverage/lcov-report/index.html | grep -oP 'Statements<\/td><td class="text-right"><strong>\K\d+')
-                  if [ "$COVERAGE" -ge 80 ]; then
+                  if [ $COVERAGE -ge 80 ]; then
                     echo "Code coverage is above 80%: $COVERAGE%"
                   else
                     echo "Code coverage is below 80%: $COVERAGE%"
