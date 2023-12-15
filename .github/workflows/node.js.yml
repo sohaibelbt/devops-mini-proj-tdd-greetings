@@ -12,7 +12,9 @@ jobs:
     steps:
     - name: Display Start Time
       run: echo "Start Time:$(date +\%H:\%M:\%S)"
-
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
     - name: Install dependencies
       run: npm install
 
