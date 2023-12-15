@@ -1,5 +1,5 @@
 // eslint-disable-next-line semi
-const greet = require('../utils/greet.js')
+const greet = require("../utils/greet.js");
 // eslint-disable-next-line no-undef
 test("checkgreet", () => {
     // eslint-disable-next-line no-undef
