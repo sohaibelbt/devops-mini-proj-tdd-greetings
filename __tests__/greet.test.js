@@ -1,4 +1,4 @@
-const greet = require('../utils/greet')
+import { greet } from '../utils/greet';
 
 // eslint-disable-next-line no-undef
 test('checkgreet', () => {
