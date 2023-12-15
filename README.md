@@ -47,19 +47,19 @@ Liens utiles:
 -   Décrivez brièvement ce que fait votre fichier YML.
 
 ```bash
-<Le fichier YML configure un worflow GitHub Actions pour l\'intégration continue sur les pull requests vers la branch principale (main). Il comprend des étapes telles que la récupération du code, la configuration de Node.js, l\'installation des dépendances, l\'exécution de Prettier et Eslint, les test, le build du projet et l\'affichage des messages informatifs tels que l\'auteur du pull request et permet d\'assurer un CI sans erreurs>
+'' Le fichier YML configure un worflow GitHub Actions pour l'intégration continue sur les pull requests vers la branch principale (main). Il comprend des étapes telles que la récupération du code, la configuration de Node.js, l'installation des dépendances, l'exécution de Prettier et Eslint, les test, le build du projet et l'affichage des messages informatifs tels que l'auteur du pull request et permet d'assurer un CI sans erreurs''
 ```
 
 -   En particulier : à quoi sert le “on” ? dans votre fichier YML ? Quelle est la différence entre “on push” et “on pull request”. Que conseilleriez-vous comme option parmi ces 2 options à un groupe de développeurs junior ? Pourquoi ?
 
 ```bash
-<Le on push déclenche la pipeline lorsqu\'un push est effectué vers la branche principale, tandis que le on pull_request déclenche la pipeline lorsqu\'une pull request est ouverte ou mise à jour. Pour un groupe de développeurs juniors, afin de maintenir une cohérence dans les versions de Node.js, les conventions de formatage, et pour éviter les conflits lors des pushs, l\'utilisation de on pull_request serait plus avantageuse.>
+'' Le 'on push' déclenche la pipeline lorsqu'un push est effectué vers la branche principale, tandis que le 'on pull_request' déclenche la pipeline lorsqu'une pull request est ouverte ou mise à jour. Pour un groupe de développeurs juniors, afin de maintenir une cohérence dans les versions de Node.js, les conventions de formatage, et pour éviter les conflits lors des pushs, l'utilisation de 'on pull_request' serait plus avantageuse.>''
 ```
 
 -   Quelle est la différence entre run et run_on ? Expliquez par rapport à votre pipeline.
 
 ```bash
-<'runs-on: ubuntu-latest' permet de spécifier que toutes les étapes du "build" seront exécutées sur une machine virtuelle Ubuntu avec la dernière version disponible.\n'run: 'représente une étape spécifique qui va être exécuter>
+'' runs-on: ubuntu-latest permet de spécifier que toutes les étapes du "build" seront exécutées sur une machine virtuelle Ubuntu avec la dernière version disponible.'run:' représente une étape spécifique qui va être exécuter''
 ```
 
 -   Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline.
