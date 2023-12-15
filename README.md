@@ -65,17 +65,26 @@ Liens utiles:
 -   Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline.
 
 ```bash
+"Uses" dans GitHub Actions invoque des actions prédéfinies, telles que l'obtention du code source ou la configuration d'un environnement. Par exemple, actions/checkout@v2 récupère le code. "Run" exécute des commandes spécifiques à votre projet, comme l'installation de dépendances ou l'exécution de tests via des commandes npm. Les actions avec "uses" sont des composants prédéfinis, tandis que "run" exécute des commandes personnalisées dans l'environnement actuel. Ces deux mots-clés permettent de modéliser différentes étapes et actions dans un workflow de GitHub.
 <votre réponse ici>
 ```
 
 -   Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline.
 
 ```bash
+Oui, les étapes dans un pipeline GitHub Actions peuvent être réorganisées. Cependant, il est crucial de considérer les dépendances entre les étapes. Par exemple, dans votre pipeline, l'étape "Checkout repository" doit être exécutée avant toute opération sur le code source, comme l'installation de dépendances ou l'exécution de tests. De même, les étapes de formatage, de linting, de tests et de construction ont un ordre logique à suivre. Donc, bien que vous puissiez réorganiser les étapes, assurez-vous de respecter les dépendances pour que le pipeline fonctionne correctement.
 <votre réponse ici>
 ```
 
 -   Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ? Quelles questions devriez-vous vous poser ?
 
 ```bash
+Pour ajouter le test de sécurité secure_app :
+
+Obtenez le programme : Assurez-vous d'avoir accès à secure_app soit en l'installant via une action existante, soit en le téléchargeant manuellement.
+Comprenez le format de sortie : Déterminez comment le test de sécurité secure_app renvoie ses résultats (succès/échec, rapports détaillés).
+Intégrez-le dans le pipeline : Ajoutez une étape pour exécuter secure_app au bon moment (après la construction, avant les tests, etc.).
+Gestion des résultats : Décidez comment gérer les résultats du test, que ce soit par des notifications en cas d'échec ou par intégration dans les rapports de test globaux.
+Testez et adaptez : Intégrez le test, vérifiez que cela fonctionne sans perturber le flux existant et ajustez si nécessaire.
 <votre réponse ici>
 ```
