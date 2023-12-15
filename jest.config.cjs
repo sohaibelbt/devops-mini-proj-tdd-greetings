@@ -1,4 +1,6 @@
 module.exports = {
+    testMatch: ["**/__tests__/**/*.js"],
+    testPathIgnorePatterns: ["/node_modules/"],
     testEnvironment: "node",
     coverageThreshold: {
         global: {
