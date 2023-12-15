@@ -1,36 +1,19 @@
-name: Node.js CI
+name: "Github Actions: CI"
 
 on:
   pull_request:
     branches: [ main ]
 
 jobs:
-  build:
-
+  check_code:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Display Start Time
-      run: echo "Start Time:$(date +\%H:\%M:\%S)"
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-      
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run Prettier
-      run: npm run prettier
-
-    - name: Run Lint
-      run: npm run lint
-      
-    - name: Build
-      run: npm run build
-
-    - name: Display End Time
-      run: echo "End Time:$(date +%H:%M:%S)"
-
-    - name: Display Success Message
-      run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
-
-
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16.14
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run prettier
+      - run: npm test
+      - run: npm run build
