@@ -5,7 +5,7 @@ Travail de recherche , mettre en place de l'integration continue avec les GitHub
 ## Informations
 
 -   N° de groupe : 24
--   Membres du groupe :
+-   Membres du groupe : Sohaib
 
 ## Énoncé
 
