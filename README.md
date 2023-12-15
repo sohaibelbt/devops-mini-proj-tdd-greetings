@@ -41,6 +41,7 @@ Merci de laisser une PR / MR ouverte afin que l'on puisse évaluer.
 Liens utiles:
 [GitHub Actions](https://docs.github.com/fr/actions)
 [Jest coverage](https://www.valentinog.com/blog/jest-coverage/)
+[Repo](https://github.com/sohaibelbt/devops-mini-proj-tdd-greetings)
 
 ## Questions
 
