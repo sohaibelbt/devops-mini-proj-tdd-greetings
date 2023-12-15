@@ -35,7 +35,7 @@ jobs:
 
             - name: Run tests and check coverage
               run: |
-                  npm run test -- --coverage
+                  npm run test
                   ls -la coverage/lcov-report/
                   COVERAGE=$(cat coverage/lcov-report/greet.js.html | grep -oP 'Statements<\/td><td class="text-right"><strong>\K\d+(?=\s%)')
                   echo "COVERAGE: $COVERAGE"
